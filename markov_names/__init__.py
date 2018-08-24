@@ -2,4 +2,4 @@
 from markov_names.markov.markov_model import MarkovModel
 from markov_names.markov.markov_generator import MarkovGenerator
 from markov_names.json_encoder import CustomEncoder
-from markov_names.name_generator import NameGenerator
+from markov_names.name_generator import NameGenerator, create_name_generator_from_file

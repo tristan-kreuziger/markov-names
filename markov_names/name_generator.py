@@ -75,8 +75,8 @@ class NameGenerator:
             json.dump(self, file, cls=CustomEncoder, indent=2, sort_keys=False, ensure_ascii=False)
 
 
-def create_name_generator_from_file(filename, order):
+def create_name_generator_from_file(filename, order, **kwargs):
     with open(filename, 'r', encoding='utf-8') as file:
         data = file.read().split(' ')
 
-    return NameGenerator(order=order, data=data)
+    return NameGenerator(order=order, data=data, **kwargs)
